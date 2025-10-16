@@ -1,0 +1,21 @@
+{
+  "name": "welcome-app",
+  "version": "1.0.0",
+  "description": "A static web app that displays welcome messages",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build.js"
+  },
+  "keywords": [
+    "welcome",
+    "static",
+    "node"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

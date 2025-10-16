@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #667eea;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.input-section {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+#nameInput {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+#nameInput:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+#submitBtn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: 600;
+}
+
+#submitBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+#submitBtn:active {
+  transform: translateY(0);
+}
+
+.welcome-message {
+  font-size: 1.5rem;
+  color: #667eea;
+  font-weight: 600;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-message.show {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
